@@ -67,7 +67,7 @@ The `type` property determines what software is used to serve the site. For now,
 
 Name | Description | Example
 ---------- | ----------- | --------
-`clientID` | Random secret used by Express in order to initialize and save server-side sessions. We recommend using something like the [secrets](https://docs.python.org/3/library/secrets.html) module to generate this value. | `"89f4f55340c5553037a070213233114ae4684e1d8b1cf8eeb0ea94281ef24185"`
+`clientID` | Random secret used by Express in order to initialize and save server-side sessions. We recommend using something like the [secrets](https://docs.python.org/3/library/secrets.html) module to generate this value. | `"89f4f55340c5553037a070"`
 
 ### Sample configuration
 
