@@ -1,7 +1,7 @@
 {
   "name": "authserve",
   "description": "Serve static files with authentication.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Ashwin Ramaswami @epicfaace",
   "bin": {
     "authserve": "./bin/run"
