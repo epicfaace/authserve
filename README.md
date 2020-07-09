@@ -95,7 +95,7 @@ Name | Description | Example
 `clientID` | GitHub OAuth App client ID | `"a59e8726d5396ed36d83"`
 `clientSecret` | GitHub OAuth App client secret | `"318df8a1e649d778a2a694216bcad2d57344a120"`
 `callbackURL` | GitHub OAuth App callback URL. Equal to `[your app url]/login/github/callback`. Additionally, this value should match the value set in "Authorization callback URL" in the GitHub OAuth App settings page. | `"https://localhost:8080/login/github/callback"`
-`allowedUsernames` | List of usernames with access to your website. | `["epicfaace"]`
+`allowedUsernames` | List of GitHub usernames with access to your website. | `["epicfaace"]`
 
 ### Sample configuration
 
