@@ -63,7 +63,13 @@ The `serve` property determines how the authenticated static site is served.
 
 The `type` property determines what software is used to serve the site. For now, the only type supported is "express", which uses Express.
 
-The default Express server needs a random secret in order to initialize and save server-side sessions; this secret should be provided in the `sessionSecret` property.
+### Supported parameters
+
+Name | Description | Example
+---------- | ----------- | --------
+`clientID` | Random secret used by Express in order to initialize and save server-side sessions. We recommend using something like the [secrets](https://docs.python.org/3/library/secrets.html) module to generate this value. | `"89f4f55340c5553037a070213233114ae4684e1d8b1cf8eeb0ea94281ef24185"`
+
+### Sample configuration
 
 ```js
 module.exports = {
@@ -82,7 +88,7 @@ The `type` property determines what type of authentication is used to serve the 
 
 To set up GitHub authentication, follow the steps in [Creating an OAuth App](https://docs.github.com/en/developers/apps/creating-an-oauth-app) to create an OAuth app.
 
-Supported parameters:
+### Supported parameters
 
 Name | Description | Example
 ---------- | ----------- | --------
@@ -91,7 +97,7 @@ Name | Description | Example
 `callbackURL` | GitHub OAuth App callback URL. Equal to `[your app url]/login/github/callback`. Additionally, this value should match the value set in "Authorization callback URL" in the GitHub OAuth App settings page. | `"https://localhost:8080/login/github/callback"`
 `allowedUsernames` | List of usernames with access to your website. | `["epicfaace"]`
 
-Sample configuration:
+### Sample configuration
 
 ```js
 module.exports = {
